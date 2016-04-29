@@ -10,10 +10,10 @@
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');  //标识应用运行的环境，YII_ENV 默认值为 'prod'，表示应用运行在线上产品环境。
 
-//todo 注册 Composer 自动加载器
+//todo 注册 Composer 自动加载器 这个是第三方的autoloader
 require(__DIR__ . '/../vendor/autoload.php');
 
-//todo 包含 Yii 类文件
+//todo 包含 Yii 类文件, 这个里面有Yii的Autoloader，放在最后面，确保其插入的autoloader会放在最前面
 require(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
 
 //todo
