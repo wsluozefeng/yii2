@@ -45,7 +45,7 @@ $config = [
                     //'categories' => ['info'],  //对应的category参数必须是info
                     //'logFile' => '@app/runtime/logs/info.log',  //默认是app.log文件
                     //maxFileSize' => 1024 * 2,
-                    //'maxLogFiles' => 20,  
+                    //'maxLogFiles' => 20,     
                 ],
 
                 'error_log'=>
