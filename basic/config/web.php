@@ -35,7 +35,7 @@ $config = [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
-        'log' => [
+        /*'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 //todo 不同等级，不同标签的日志配置
@@ -44,8 +44,8 @@ $config = [
                     'levels' => ['info', 'warning', 'trace'],
                     //'categories' => ['info'],  //对应的category参数必须是info
                     //'logFile' => '@app/runtime/logs/info.log',  //默认是app.log文件
-                    /*'maxFileSize' => 1024 * 2,
-                    'maxLogFiles' => 20,*/
+                    //maxFileSize' => 1024 * 2,
+                    //'maxLogFiles' => 20,
                 ],
 
                 'error_log'=>
@@ -55,7 +55,7 @@ $config = [
                         'logFile' => '@app/runtime/logs/error.log',
                     ],
             ],
-        ],
+        ],*/
 
         // 使用配置数组注册 "db" 组件
         'db' => require(__DIR__ . '/db.php'),
