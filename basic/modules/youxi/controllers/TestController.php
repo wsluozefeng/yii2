@@ -65,4 +65,19 @@ class TestController extends Controller{
     public function actionGo(){
         return $this->render('go');
     }
+
+    public function actionMongodb()
+    {
+        \Yii::$app->cache->monSetDb('ajia')->monSetCollection('my_collection');
+        $document = array(
+            "title" => "MongoDB",
+            "description" => "database",
+            "likes" => 100,
+            "url" => "http://www.runoob.com/mongodb/",
+            "by", "菜鸟教程"
+        );
+        $tmp = \Yii::$app->cache->add('',$document);
+        var_dump($tmp);
+        exit();
+    }
 }
